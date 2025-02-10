@@ -1,4 +1,5 @@
 import { Character, Clients, ModelProviderName } from "@elizaos/core";
+import safeValidatorPlugin from "@elizaos/plugin-safe-transaction";
 
 export const character: Character = {
     name: "Escudo",
@@ -9,7 +10,7 @@ export const character: Character = {
             model: "en_US-male-low" 
         }
     },
-    plugins: [],
+    plugins: [safeValidatorPlugin],
     bio: [
         "Escudo is a multisig transaction validator and signer",
         "Reviews and signs pending multisig transactions",
